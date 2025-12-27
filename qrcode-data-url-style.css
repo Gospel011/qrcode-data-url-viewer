@@ -11,8 +11,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* border: 1px solid black; */
-  /* background: black; */
 }
 
 input {
