@@ -13,27 +13,49 @@ body {
   gap: 2rem;
 }
 
-input {
-  width: 60%;
+form {
+  width: min(60%, 40rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
   padding: 0.75rem 0.5rem;
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  transition: all 300ms;
+  transition: all 100ms;
 }
 
-input:focus {
-  width: 53%;
+input:focus,
+textarea:focus {
+  /* width: 105%; */
+  outline: 1px solid #9a48d0;
+  outline-offset: 0.25rem;
 }
 
 button {
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.75rem;
   border: none;
   cursor: pointer;
+  background: #9a48d0;
+  font-weight: bold;
+  color: white;
+  width: 100%;
 }
 
 img {
   width: 20rem;
   height: 20rem;
   object-fit: cover;
+}
+
+@media (width >= 1200px) {
+  body {
+    flex-direction: row;
+  }
 }
