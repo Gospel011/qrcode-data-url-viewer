@@ -5,9 +5,14 @@ if (form) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const dataUrl = formData.get("data-url");
-    const img = document.createElement("img");
-    img.src = dataUrl;
+    const previousImg = document.querySelector("img");
 
-    document.body.appendChild(img);
+    if (previousImg) {
+      previousImg.src = dataUrl;
+    } else {
+      const img = document.createElement("img");
+      img.src = dataUrl;
+      document.body.appendChild(img);
+    }
   });
 }
