@@ -33,7 +33,7 @@ textarea {
 input:focus,
 textarea:focus {
   /* width: 105%; */
-  outline: 1px solid #9a48d0;
+  outline: 1.5px solid #b1ec52;
   outline-offset: 0.25rem;
 }
 
@@ -42,9 +42,9 @@ button {
   border-radius: 0.75rem;
   border: none;
   cursor: pointer;
-  background: #9a48d0;
+  background: #b1ec52;
   font-weight: bold;
-  color: white;
+  color: black;
   width: 100%;
 }
 
@@ -58,4 +58,8 @@ img {
   body {
     flex-direction: row;
   }
+}
+
+footer {
+  font-size: 0.875rem;
 }
