@@ -11,14 +11,23 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 5rem;
+  /* border: 10px solid black; */
+}
+
+main {
+  width: 100%;
 }
 
 form {
-  width: min(60%, 40rem);
+  width: min(90%, 40rem);
+  margin: 0% auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
+  
 }
 
 input,
@@ -32,7 +41,6 @@ textarea {
 
 input:focus,
 textarea:focus {
-  /* width: 105%; */
   outline: 1.5px solid #b1ec52;
   outline-offset: 0.25rem;
 }
@@ -55,11 +63,20 @@ img {
 }
 
 @media (width >= 1200px) {
-  body {
+  main {
     flex-direction: row;
   }
 }
 
 footer {
   font-size: 0.875rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
 }

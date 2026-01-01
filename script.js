@@ -12,7 +12,9 @@ if (form) {
     } else {
       const img = document.createElement("img");
       img.src = dataUrl;
-      document.body.appendChild(img);
+      const main = document.querySelector('main')
+
+      main.appendChild(img);
     }
   });
 }
